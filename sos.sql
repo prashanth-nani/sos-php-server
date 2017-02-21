@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Feb 20, 2017 at 10:12 PM
+-- Generation Time: Feb 21, 2017 at 08:33 AM
 -- Server version: 10.1.11-MariaDB
 -- PHP Version: 7.0.3
 
@@ -40,7 +40,11 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `name`, `phone`, `gender`, `email`, `password`) VALUES
-(1, 'Prashanth', 9935361164, 'M', 'p@g.com', '1234');
+(12, 'Prashant h', 9935361164, 'Male', 'ususj@heje', 'hehejei'),
+(13, 'gdhd', 65659, 'Male', 'ysush@hdh', 'gdhdj'),
+(14, 'hdjdj', 6655, 'Male', 'helloworld@g.xkm', 'hhhd'),
+(15, 'hdksk', 65659, 'Male', 'p@g.com', '123'),
+(16, 'Man', 12345, 'Male', 'hello@a', '123');
 
 --
 -- Indexes for dumped tables
@@ -50,8 +54,18 @@ INSERT INTO `user` (`id`, `name`, `phone`, `gender`, `email`, `password`) VALUES
 -- Indexes for table `user`
 --
 ALTER TABLE `user`
-  ADD PRIMARY KEY (`email`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `email` (`email`);
 
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
